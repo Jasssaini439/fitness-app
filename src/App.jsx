@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage.jsx';
 import LoginPage from './pages/LoginPage';
 import UserDashboard from './pages/user/DashBoard1';
 import SignupPage from './pages/SignupPage';
@@ -29,6 +28,7 @@ import Gallery1 from './pages/admin/Gallery1.jsx';
 // Stripe Integration
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import HomePage from './pages/Homepage.jsx';
 
 // Replace with your real publishable key
 const stripePromise = loadStripe('pk_test_51RMMVJ4IxcU9Rg0vGuRvTtur5WHYae0A1J7WUT9gNhYF6oNwnFXzgWFa9Px3hbZtw9QCDv2AvELHAiIclz8UGaqC00wQui0D87');
@@ -46,7 +46,7 @@ function App() {
           <div>
             <Navbar />
             <Routes>
-              <Route path="/" element={<HomePage/>} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/Signup" element={<SignupPage />} />
               <Route path="/Logout" element={<HomePage />} />
