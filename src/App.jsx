@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage.jsx';
 import LoginPage from './pages/LoginPage';
 import UserDashboard from './pages/user/DashBoard1';
 import SignupPage from './pages/SignupPage';
@@ -46,7 +46,7 @@ function App() {
           <div>
             <Navbar />
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<HomePage/>} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/Signup" element={<SignupPage />} />
               <Route path="/Logout" element={<HomePage />} />
