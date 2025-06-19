@@ -94,7 +94,7 @@ const BMICalculator = () => {
     {/* Image Section - Right side */}
     <div className="w-full ml-12 lg:w-[55%]">
       <img
-        src="./public/bmi.jpg"
+        src="/bmi.jpg"
         alt="BMI Illustration"
         className="w-full h-full object-cover rounded"
       />

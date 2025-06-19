@@ -4,17 +4,17 @@ const trainers = [
   {
     name: 'Ashley Cooper',
     role: 'Yoga Trainer',
-    image: './public/trainers/timg5.jpg',
+    image: '/trainers/timg5.jpg',
   },
   {
     name: 'Wade Warren',
     role: 'Fit Trainer',
-    image: './public/trainers/timg6.jpg',
+    image: '/trainers/timg6.jpg',
   },
   {
     name: 'Esther Howard',
     role: 'Bootcamp Trainer',
-    image: './public/trainers/timg7.jpg',
+    image: '/trainers/timg7.jpg',
   },
 ];
 
